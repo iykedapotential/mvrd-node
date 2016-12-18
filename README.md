@@ -21,21 +21,22 @@ The basic usage of this library is:
  */
 
  var mvrd = require('mvrd-node');
-
+ 
+ var platenumber = 'FST918EH';  
  var client = new mvrd();
- client.getData().then(function(resp){
+ client.getData(platenumber).then(function(resp){
      console.log(resp);
  })
  // Sample Output would look like:
-`{ plateNumber: 'FST918EH',
-  ownerName: ' AKINJO A STELLA',
-  color: 'Custom',
+{ plateNumber: 'FST918EH',
+  ownerName: ' PAUL A SEGUN',
+  color: 'Green',
   model: 'Honda Accord',
-  chasisNumber: '1HGCM56303A039882',
+  chasisNumber: '1HGCMxxxxxxx39882',
   vehicleStatus: 'Default',
   isssueDate: '2016-09-08T12:50:46.493',
   expiryDate: '2017-09-07T12:50:46.493' }
-  `
+  
 ```
 
 ## Unit Test
