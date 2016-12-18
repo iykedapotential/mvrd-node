@@ -17,7 +17,7 @@ The basic usage of this library is:
 /**
  * Get Vehicle Data
  * @param {String} platenumber 
- * @return {Promise} Object 
+ * @return {Object}  
  */
 
  var mvrd = require('mvrd-node');
